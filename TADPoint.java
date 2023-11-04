@@ -24,10 +24,12 @@ public class TADPonto{
     this.coordX = coordX;
   }
 
-  public void setCoordY(int coordY){
+  public void setCoordY(int coordY) throws Exception{
 
     if ((coordY > 0) && (coordY < 600)){
       this.coordY = coordY;
+    } else {
+      throw new Exception();
     }
   }
 }
