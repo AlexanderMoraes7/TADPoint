@@ -6,8 +6,11 @@ class Main {
 
     TADPonto p = new TADPonto();
     p.getCoordX();
+    try{
     p.setCoordY(2000);
-    
+    } catch (Exception ex) {
+      System.out.println("Coordenada Y inválida");
+    }
     System.out.println(p.getCoordY());
   }
 }
